@@ -1,6 +1,6 @@
 {
-    "name": "opencontent/openpa_bootstrapitalia-ls",
-    "description": "Opencontent OpenPA Bootstrap Italia",
+    "name": "opencontent/ezjscore",
+    "description": "Opencontent eZ JSCore fork",
     "type": "ezpublish-legacy-extension",
     "authors": [        
         {
@@ -11,11 +11,9 @@
     "license": "GPL-2.0",    
     "minimum-stability": "dev",
     "require": {
-        "ezsystems/ezpublish-legacy-installer": "*",
-        "opencontent/ocbootstrap-ls": "*",
-        "opencontent/openpa-ls": "*"        
+        "ezsystems/ezpublish-legacy-installer": "*"
     },
     "extra": {
-        "ezpublish-legacy-extension-name": "openpa_bootstrapitalia"
+        "ezpublish-legacy-extension-name": "ezjscore"
     }
 }
