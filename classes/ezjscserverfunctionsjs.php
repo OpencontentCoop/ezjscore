@@ -494,6 +494,7 @@ YUI( YUI3_config ).add('io-ez', function( Y )
                          'SearchResultCount' => 0,
                          'SearchCount' => 0,
                          'SearchResult' => array(),
+                         // @phpstan-ignore variable.undefined
                          'SearchString' => $searchStr,
                          'SearchExtras' => array()
         );
@@ -503,6 +504,7 @@ YUI( YUI3_config ).add('io-ez', function( Y )
             $result['CallbackID'] = $http->postVariable( 'CallbackID' );
 
         // Only search if there is something to search for
+        // @phpstan-ignore variable.undefined
         if ( $searchStr )
         {
             $searchList = eZSearch::search( $searchStr, $params );
