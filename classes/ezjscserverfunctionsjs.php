@@ -503,6 +503,7 @@ YUI( YUI3_config ).add('io-ez', function( Y )
         if ( $http->hasPostVariable( 'CallbackID' ) )
             $result['CallbackID'] = $http->postVariable( 'CallbackID' );
 
+        // @phpstan-ignore variable.undefined
         // Only search if there is something to search for
         // @phpstan-ignore variable.undefined
         if ( $searchStr )
