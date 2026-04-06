@@ -503,6 +503,7 @@ YUI( YUI3_config ).add('io-ez', function( Y )
         // Possibility to keep track of callback reference for use in js callback function
         if ( $http->hasPostVariable( 'CallbackID' ) )
             $result['CallbackID'] = $http->postVariable( 'CallbackID' );
+ // @phpstan-ignore variable.undefined
 
         // @phpstan-ignore variable.undefined
                 // @phpstan-ignore variable.undefined

@@ -154,6 +154,7 @@ class ezjscServerFunctionsNode extends ezjscServerFunctions
            // @phpstan-ignore variable.undefined
            throw new InvalidArgumentException( "Argument 1: '$embedType\_$embedId' does not map to a valid content object" );
         }
+        // @phpstan-ignore variable.undefined
         else if ( !$embedObject->canRead() )
         // @phpstan-ignore variable.undefined
             // @phpstan-ignore variable.undefined
@@ -217,6 +218,7 @@ class ezjscServerFunctionsNode extends ezjscServerFunctions
                                                                     'priority' => $priorityArray,
                                                                     'priority_id' => $priorityIDArray ), null, true );
         }
+        // @phpstan-ignore return.missing
         else
         {
             eZContentOperationCollection::updatePriority( $contentNodeID, $priorityArray, $priorityIDArray );
