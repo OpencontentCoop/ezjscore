@@ -494,7 +494,6 @@ YUI( YUI3_config ).add('io-ez', function( Y )
                          'SearchResultCount' => 0,
                          'SearchCount' => 0,
                          'SearchResult' => array(),
-                // @phpstan-ignore variable.undefined
                          // @phpstan-ignore variable.undefined
                          'SearchString' => $searchStr,
                          'SearchExtras' => array()
@@ -503,10 +502,7 @@ YUI( YUI3_config ).add('io-ez', function( Y )
         // Possibility to keep track of callback reference for use in js callback function
         if ( $http->hasPostVariable( 'CallbackID' ) )
             $result['CallbackID'] = $http->postVariable( 'CallbackID' );
- // @phpstan-ignore variable.undefined
 
-        // @phpstan-ignore variable.undefined
-                // @phpstan-ignore variable.undefined
         // Only search if there is something to search for
         // @phpstan-ignore variable.undefined
         if ( $searchStr )

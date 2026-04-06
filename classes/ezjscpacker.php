@@ -592,7 +592,6 @@ class ezjscPacker
             $extension = $data['file_extension'] === '.js' ? 'JS' : 'CSS';
             if ( $as_html )
             {
-        // @phpstan-ignore arguments.count
                 // @phpstan-ignore arguments.count
                 $sourceFilesStats = self::printDebugReportFiles( $data, $as_html );
                 $cache = $data['cache_path'] === '' ? ''

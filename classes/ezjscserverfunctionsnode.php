@@ -150,14 +150,10 @@ class ezjscServerFunctionsNode extends ezjscServerFunctions
 
         if ( !$embedObject instanceof eZContentObject )
         {
-            // @phpstan-ignore variable.undefined
            // @phpstan-ignore variable.undefined
            throw new InvalidArgumentException( "Argument 1: '$embedType\_$embedId' does not map to a valid content object" );
         }
-        // @phpstan-ignore variable.undefined
         else if ( !$embedObject->canRead() )
-        // @phpstan-ignore variable.undefined
-            // @phpstan-ignore variable.undefined
         {
             // @phpstan-ignore variable.undefined
             throw new InvalidArgumentException( "Argument 1: '$embedType\_$embedId' is not available" );
@@ -218,15 +214,11 @@ class ezjscServerFunctionsNode extends ezjscServerFunctions
                                                                     'priority' => $priorityArray,
                                                                     'priority_id' => $priorityIDArray ), null, true );
         }
-        // @phpstan-ignore return.missing
         else
         {
             eZContentOperationCollection::updatePriority( $contentNodeID, $priorityArray, $priorityIDArray );
-        // @phpstan-ignore return.missing
-        // @phpstan-ignore return.missing
         }
 
-        // @phpstan-ignore return.missing
         // @phpstan-ignore return.missing
         if ( $http->hasPostVariable( 'ContentObjectID' ) )
         {
